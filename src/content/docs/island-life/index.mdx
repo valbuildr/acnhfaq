@@ -4,7 +4,7 @@ description: "Frequently asked questions about Island Life in Animal Crossing: N
 prev: false
 ---
 
-import { Badge, Aside } from '@astrojs/starlight/components';
+import { Badge, Aside, Tabs, TabItem } from '@astrojs/starlight/components';
 import ButtonIcon from "@/components/ButtonIcon.astro";
 import ExternalIcon from "@/components/ExternalIcon.astro";
 
@@ -107,10 +107,10 @@ Asteriation's [website](https://acnh.isomorphicbox.com/updates/2.0.0/#kappn) has
   Character "age" is important in determining which islands are available to you. For example, your character must be created during or before Winter to be able to land on the Snowflake Kapp'n island. If you create your character after the season, you will need to wait for a year (or time travel) to be able to visit it.
 </Aside>
 
-{/*## Which Mom's items can I get each month?
+## Which Mom's items can I get each month?
 
 |     Month      | North Hemisphere  | Southern Hemisphere |
-|:--------------:|-------------------|---------------------|
+|----------------|-------------------|---------------------|
 |    January     | Art               | Art                 |
 |    February    | Embroidery        | Plushie             |
 |     March      | Candle Set        | Cushion             |
@@ -128,41 +128,234 @@ Asteriation's [website](https://acnh.isomorphicbox.com/updates/2.0.0/#kappn) has
 You can get different colors on different profiles. The birthday cake item can sometimes be sent early if you time travel. You will still get a birthday cake if you sync back to real time for your birthday.
 
 ## What are reactions? 
-Each [villager personality](/acnhfaq/villagers#what-are-the-villager-personalities) allows you to unlock reactions—these are the emotion animations your character can display. Unlocking them all takes time, so be patient! The table below shows which reactions are unlocked based on which personalities. You need a villager of that personality living on your island to unlock those specific reactions.
+Each [villager personality](/villagers#what-are-the-villager-personalities) allows you to unlock reactions—these are the emotion animations your character can display. Unlocking them all takes time, so be patient! The table below shows which reactions are unlocked based on which personalities. You need a villager of that personality living on your island to unlock those specific reactions.
 
 For example, if you have no peppy villager, you cannot learn the aggravation, curiosity, happiness, sleepy, or mischief reactions. You can, however, always move out a villager once you've obtained all of their possible reactions!
 
-For the Halloween reactions, they are earned by playing the [Halloween](/acnhfaq/events#halloween) event. The Hip Reactions Collection can be bought via Nook Miles Redemption for 2,700 <span class="icon-NM"></span>. The New Reaction Notebook can be bought via Nook Miles Redemption for 3,300 <span class="icon-NM"></span> and requires Hip Reactions to be bought beforehand. 
+For the Halloween reactions, they are earned by playing the [Halloween](/events#halloween) event. The Hip Reactions Collection can be bought via Nook Miles Redemption for 2,700 <ButtonIcon button="NM" />. The New Reaction Notebook can be bought via Nook Miles Redemption for 3,300 <ButtonIcon button="NM" /> and requires Hip Reactions to be bought beforehand. 
 
-
-For the Festivale reactions, the <span><img src="https://acnhcdn.com/latest/FtrIcon/HowtoBookReactionCarnival.png" id="inv-icon"></span> Viva Festivale Reaction Set can be purchased with **19,800 <span class="icon-Bells"></span>** from the shelf at Nook's Cranny from February 1<sup>st</sup> to February 15<sup>th</sup>.
+For the Festivale reactions, the <ExternalIcon icon="HowtoBookReactionCarnival" category="FtrIcon" /> Viva Festivale Reaction Set can be purchased with **19,800 <ButtonIcon button="Bells" />** from the shelf at Nook's Cranny from February 1<sup>st</sup> to February 15<sup>th</sup>.
 
 The DJ KK Festival reactions are exclusive to Happy Home Paradise. They are earned after you experience your first DJ KK Festival.
 
-All reactions and their sources: 
+### Reactions Sources
 
-|Type|Reactions|Special|
-|:-:|:-:|:-:|
-|Initial|<img src="/acnhfaq/assets/img/reactions/delight.png"/><img src="/acnhfaq/assets/img/reactions/greetings.png"/><img src="/acnhfaq/assets/img/reactions/joy.png"/><img src="/acnhfaq/assets/img/reactions/surprise.png"/>|-|
-|Cranky|<img src="/acnhfaq/assets/img/reactions/agreement.png"/><img src="/acnhfaq/assets/img/reactions/bewilderment.png"/><img src="/acnhfaq/assets/img/reactions/sheepishness.png"/><img src="/acnhfaq/assets/img/reactions/worry.png"/>|<img src="/acnhfaq/assets/img/reactions/inspiration.png"/>|
-|Jock|<img src="/acnhfaq/assets/img/reactions/distress.png"/><img src="/acnhfaq/assets/img/reactions/encouraging.png"/><img src="/acnhfaq/assets/img/reactions/shocked.png"/><img src="/acnhfaq/assets/img/reactions/sneezing.png"/>|<img src="/acnhfaq/assets/img/reactions/flourish.png"/>|
-|Lazy|<img src="/acnhfaq/assets/img/reactions/bashfulness.png"/><img src="/acnhfaq/assets/img/reactions/mistaken.png"/><img src="/acnhfaq/assets/img/reactions/shyness.png"/><img src="/acnhfaq/assets/img/reactions/sorrow.png"/>|    <img src="/acnhfaq/assets/img/reactions/pride.png"/>    |
-|Smug|<img src="/acnhfaq/assets/img/reactions/dozing.png"/><img src="/acnhfaq/assets/img/reactions/heartbreak.png"/><img src="/acnhfaq/assets/img/reactions/resignation.png"/><img src="/acnhfaq/assets/img/reactions/smirking.png"/>| <img src="/acnhfaq/assets/img/reactions/showmanship.png"/> |
-|Big Sister (Uchi)|<img src="/acnhfaq/assets/img/reactions/apologetic.png"/><img src="/acnhfaq/assets/img/reactions/coldchill.png"/><img src="/acnhfaq/assets/img/reactions/disagreement.png"/><img src="/acnhfaq/assets/img/reactions/laughter.png"/>|  <img src="/acnhfaq/assets/img/reactions/confident.png"/>  |
-|Peppy|<img src="/acnhfaq/assets/img/reactions/aggravation.png"/><img src="/acnhfaq/assets/img/reactions/curiosity.png"/><img src="/acnhfaq/assets/img/reactions/happiness.png"/><img src="/acnhfaq/assets/img/reactions/sleepy.png"/>|  <img src="/acnhfaq/assets/img/reactions/mischief.png"/>   |
-|Snooty|<img src="/acnhfaq/assets/img/reactions/amazed.png"/><img src="/acnhfaq/assets/img/reactions/intense.png"/><img src="/acnhfaq/assets/img/reactions/thought.png"/><img src="/acnhfaq/assets/img/reactions/sighing.png"/>|    <img src="/acnhfaq/assets/img/reactions/love.png"/>     |
-|Normal                  |<img src="/acnhfaq/assets/img/reactions/fearful.png"/><img src="/acnhfaq/assets/img/reactions/glee.png"/><img src="/acnhfaq/assets/img/reactions/pleased.png"/><img src="/acnhfaq/assets/img/reactions/sadness.png"/>|  <img src="/acnhfaq/assets/img/reactions/daydream.png"/>   |
-| [Halloween](/acnhfaq/events/#halloween) |<img src="/acnhfaq/assets/img/reactions/scare.png"/><img src="/acnhfaq/assets/img/reactions/haunt.png"/>|-|
-|Viva Festivale<br>Reaction Set|<img src="/acnhfaq/assets/img/reactions/confetti.png"/><img src="/acnhfaq/assets/img/reactions/feelinit.png"/><img src="/acnhfaq/assets/img/reactions/letsgo.png"/><img src="/acnhfaq/assets/img/reactions/viva.png"/>|-|
-|Group Stretching|<img src="/acnhfaq/assets/img/reactions/posturewarmup.png"/><img src="/acnhfaq/assets/img/reactions/armcircles.png"/><img src="/acnhfaq/assets/img/reactions/sidebends.png"/><img src="/acnhfaq/assets/img/reactions/bodytwists.png"/><img src="/acnhfaq/assets/img/reactions/widearmstretch.png"/><br><img src="/acnhfaq/assets/img/reactions/upperbodycircles.png"/><img src="/acnhfaq/assets/img/reactions/jump.png"/>|-|
-|Hip Reaction<br>Collection|<img src="/acnhfaq/assets/img/reactions/excited.png"/><img src="/acnhfaq/assets/img/reactions/hereyougo.png"/><img src="/acnhfaq/assets/img/reactions/sitdown.png"/><img src="/acnhfaq/assets/img/reactions/sniffsniff.png"/><img src="/acnhfaq/assets/img/reactions/tada.png"/><br><img src="/acnhfaq/assets/img/reactions/takeapicture.png"/><img src="/acnhfaq/assets/img/reactions/wavegoodbye.png"/><img src="/acnhfaq/assets/img/reactions/workout.png"/><img src="/acnhfaq/assets/img/reactions/yoga.png"/>|-|
-|New Reaction<br>Notebook|<img src="/acnhfaq/assets/img/reactions/doublewave.png"/><img src="/acnhfaq/assets/img/reactions/stretch.png"/><img src="/acnhfaq/assets/img/reactions/jammin.png"/><img src="/acnhfaq/assets/img/reactions/listeninears.png"/><img src="/acnhfaq/assets/img/reactions/saycheese.png"/><br><img src="/acnhfaq/assets/img/reactions/behold.png"/><img src="/acnhfaq/assets/img/reactions/eager.png"/><img src="/acnhfaq/assets/img/reactions/flex.png"/><img src="/acnhfaq/assets/img/reactions/workit.png"/><img src="/acnhfaq/assets/img/reactions/actnatural.png"/><img src="/acnhfaq/assets/img/reactions/hula.png"/>|-|
-|DJ KK Festival<br>Reactions|<img src="/acnhfaq/assets/img/reactions/groovinghop.png"/><img src="/acnhfaq/assets/img/reactions/grooveright.png"/><img src="/acnhfaq/assets/img/reactions/grooveleft.png"/><img src="/acnhfaq/assets/img/reactions/soakitin.png"/><img src="/acnhfaq/assets/img/reactions/sidetoside.png"/><br><img src="/acnhfaq/assets/img/reactions/islandstomp.png"/><img src="/acnhfaq/assets/img/reactions/airplane.png"/><img src="/acnhfaq/assets/img/reactions/twistydance.png"/><img src="/acnhfaq/assets/img/reactions/shimmy.png"/><img src="/acnhfaq/assets/img/reactions/turnippatch.png"/><img src="/acnhfaq/assets/img/reactions/armswingdance.png"/> |-|
+#### Initial
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/delight.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/greetings.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/joy.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/surprise.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    None
+  </TabItem>
+</Tabs>
 
-* * *
+#### Cranky Villagers
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/agreement.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/bewilderment.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/sheepishness.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/worry.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    <img src="/assets/img/reactions/inspiration.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+</Tabs>
+
+#### Jock Villagers
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/distress.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/encouraging.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/shocked.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/sneezing.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    <img src="/assets/img/reactions/flourish.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+</Tabs>
+
+#### Lazy Villagers 
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/bashfulness.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/mistaken.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/shyness.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/sorrow.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    <img src="/assets/img/reactions/pride.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+</Tabs>
+
+#### Smug Villagers 
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/dozing.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/heartbreak.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/resignation.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/smirking.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    <img src="/assets/img/reactions/showmanship.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+</Tabs>
+
+#### Big Sister/Uchi Villagers 
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/apologetic.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/coldchill.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/disagreement.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/laughter.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    <img src="/assets/img/reactions/confident.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+</Tabs>
+
+#### Peppy Villagers 
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/aggravation.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/curiosity.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/happiness.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/sleepy.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    <img src="/assets/img/reactions/mischief.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+</Tabs>
+
+#### Snooty Villagers 
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/amazed.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/intense.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/thought.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/sighing.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    <img src="/assets/img/reactions/love.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+</Tabs>
+
+#### Normal Villagers 
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/fearful.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/glee.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/pleased.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/sadness.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    <img src="/assets/img/reactions/daydream.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+</Tabs>
+
+#### [Halloween](/events#halloween) 
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/scare.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/haunt.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    None
+  </TabItem>
+</Tabs>
+
+#### Viva Festivale Reaction Set 
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/scare.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/haunt.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    None
+  </TabItem>
+</Tabs>
+
+#### Group Stretching
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/posturewarmup.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/armcircles.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/sidebends.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/bodytwists.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/widearmstretch.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/upperbodycircles.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/jump.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    None
+  </TabItem>
+</Tabs>
+
+#### Hip Reaction Collection
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/excited.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/hereyougo.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/sitdown.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/sniffsniff.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/tada.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/takeapicture.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/wavegoodbye.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/workout.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/yoga.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    None
+  </TabItem>
+</Tabs>
+
+#### New Reaction Notebook
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/doublewave.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/stretch.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/jammin.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/listeninears.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/saycheese.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/behold.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/eager.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/flex.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/workit.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/actnatural.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/hula.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    None
+  </TabItem>
+</Tabs>
+
+#### DJ KK Festival Reactions
+<Tabs syncKey="reactionSources">
+  <TabItem label="Reactions">
+    <img src="/assets/img/reactions/groovinghop.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/grooveright.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/grooveleft.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/soakitin.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/sidetoside.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/islandstomp.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/airplane.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/twistydance.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/shimmy.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/turnippatch.png" class="inline-block align-middle m-0"/>
+    <img src="/assets/img/reactions/armswingdance.png" class="inline-block align-middle m-0"/>
+  </TabItem>
+  <TabItem label="Special">
+    None
+  </TabItem>
+</Tabs>
+
 ## Dreams
 ### How do I dream?
-After upgrading your Resident Services from a tent to a building, you would have unlocked Dreaming. Go to a bed indoors and walk towards the bed lie down. Select `I want to sleep`. This will allow you to enter the dream world and meet [Luna](/acnhfaq/npc/#luna)! From there, select `I want to dream` and then enter a dream address!  
+After upgrading your Resident Services from a tent to a building, you would have unlocked Dreaming. Go to a bed indoors and walk towards the bed lie down. Select `I want to sleep`. This will allow you to enter the dream world and meet [Luna](/npc/#luna)! From there, select `I want to dream` and then enter a dream address!  
 
 ### How do I get my dream address?
 Go to a bed indoors and walk towards the bed lie down. Select `I want to sleep`. Talk to Luna and select `Share a dream` to receive your dream code.  
@@ -172,23 +365,19 @@ Your weather and time in the dream will be same as when you upload the dream.
 You can explore other user's islands at your own leisure to get inspiration or talk to different villagers! Any changes made by visitors will NOT affect your real island and visitors can NOT take anything from a dream!  
 
 ### What are dream bell exchange tickets for?
-These <span><img src="https://acnhcdn.com/latest/MenuIcon/DreamBellExchangeTicket.png" id="inv-icon"></span> tickets are given to you by Luna via the mail the next day after uploading your dream. They can be sold at Nook's Cranny for 5,000 <span class="icon-Bells"></span>. They have no other use.  
-
-* * *
+These <ExternalIcon icon="DreamBellExchangeTicket" category="MenuIcon" /> tickets are given to you by Luna via the mail the next day after uploading your dream. They can be sold at Nook's Cranny for 5,000 <ButtonIcon button="Bells" />. They have no other use.  
 
 ## Swimming
 ### How do I swim?
-First you need a wetsuit, they can be bought from the cabinet in Nook's Cranny or ordered from the nook stop under Redeem Nook Miles. Once you have a wetsuit, face the ocean and press <span class="icon-A"></span>. To swim faster hold <span class="icon-A"></span> and when you see bubbles, select <span class="icon-Y"></span> to dive and catch a sea creature.
+First you need a wetsuit, they can be bought from the cabinet in Nook's Cranny or ordered from the nook stop under Redeem Nook Miles. Once you have a wetsuit, face the ocean and press <ButtonIcon button="A" />. To swim faster hold <ButtonIcon button="A" /> and when you see bubbles, select <ButtonIcon button="Y" /> to dive and catch a sea creature.
 
 ### How to catch fast sea creatures?
-If you are having trouble catching a sea creature because it is moving too quickly you could try approching it without holding <span class="icon-A"></span> then selecting <span class="icon-Y"></span> when you are near enough to dive and catch it. Or you could try swimming towards it and making it move into the corners of the net since they can't go past it.
+If you are having trouble catching a sea creature because it is moving too quickly you could try approching it without holding <ButtonIcon button="A" /> then selecting <ButtonIcon button="Y" /> when you are near enough to dive and catch it. Or you could try swimming towards it and making it move into the corners of the net since they can't go past it.
 
 ### Who is Pascal?
-If you catch a scallop and it's the first scallop of that day caught, an NPC named [Pascal](/acnhfaq/npc/permanent#pascal) will appear and ask for the scallop, if you tell him yes, then he will give you either a pearl, a mermaid furniture diy, or mermaid clothing that will go directly into your pockets if you have enough pocket space.
+If you catch a scallop and it's the first scallop of that day caught, an NPC named [Pascal](/npc/permanent#pascal) will appear and ask for the scallop, if you tell him yes, then he will give you either a pearl, a mermaid furniture diy, or mermaid clothing that will go directly into your pockets if you have enough pocket space.
 
-For more information, please visit <https://yuexr.github.io/img/pascal2.png>
-
-* * *
+For more information, please visit https://yuexr.github.io/img/pascal2.png
 
 ## Group Stretching
 ### Where do I do group stretching?
@@ -197,24 +386,24 @@ A tape deck will be in front of the Resident Services. Interacting with this wit
 ### What are the rewards for group stretching?
 After doing group stretching for a specified amount of days, a reward will be given to you in the mail, or in the case of reactions, as soon as you complete the specified amount of stretches. Only one group stretching session counts per day. The table below lists the rewards and their required daily stretching amounts.
 
-| Days Required |                                                                    Reward                                                                    |
-|:-------------:|:--------------------------------------------------------------------------------------------------------------------------------------------:|
-|       3       | <span><img src="https://acnhcdn.com/latest/FtrIcon/TopsTexOnepieceOverallHAerobics0.png" id="inv-icon"></span> Nook Inc. leotard<sup>1</sup> |
-|      10       |       <span><img src="https://acnhcdn.com/latest/FtrIcon/FtrYogamatExercise.png" id="inv-icon"></span> Nook Inc. yoga mat<sup>1</sup>        |
-|      20       |       <span><img src="https://acnhcdn.com/latest/FtrIcon/ToolDumbbellPlayer_Remake_0_0.png" id="inv-icon"></span> Dumbbell<sup>2</sup>       |
-|      30       |        <span><img src="https://acnhcdn.com/latest/FtrIcon/ToolProtein_Remake_0_0.png" id="inv-icon"></span> Protein shake<sup>2</sup>        |
-|      50       |                                                       Stretching reactions<sup>3</sup>                                                       |
+| Days Required | Reward                                                                                                    |
+|:--------------|:----------------------------------------------------------------------------------------------------------|
+| 3             | <ExternalIcon icon="TopsTexOnepieceOverallHAerobics0" category="FtrIcon" /> Nook Inc. leotard<sup>1</sup> |
+| 10            | <ExternalIcon icon="FtrYogamatExercise" category="FtrIcon" /> Nook Inc. yoga mat<sup>1</sup>              |
+| 20            | <ExternalIcon icon="ToolDumbbellPlayer_Remake_0_0" category="FtrIcon" /> Dumbbell<sup>2</sup>             |
+| 30            | <ExternalIcon icon="ToolProtein_Remake_0_0" category="FtrIcon" /> Protein shake<sup>2</sup>               |
+| 50            | Stretching reactions<sup>3</sup>                                                                          |
 
 1. Reorderable as Nook Mile Redemption redeems from the Nook Stop once unlocked.
 2. Reorderable from Nook Shopping once unlocked.
 3. There is a separate count for progress towards reactions, and this must be done with days going forward, i.e. time travelling back to achieve the Nook Miles stamp for this achievement will not count towards unlocking the reactions.
-{: .fs-3}
 
-* * *
 ## The Roost
-The Roost is tied to Brewster, and to unlock [Brewster](/acnhfaq/npc/permanent/#brewster) <span><img src="https://acnhcdn.com/latest/NpcIcon/pge.png" id="inv-icon"></span>, you must meet the following pre-requirements:
+
+The Roost is tied to Brewster, and to unlock [Brewster](/npc/permanent/#brewster) <ExternalIcon icon="pge" category="NpcIcon" />, you must meet the following pre-requirements:
 - K.K. Slider must have already performed on your island.
-- At least one item must have been donated for each main wing in the museum: fish and sea creatures, insects, fossils and any piece of art.
+- The art gallery must be open.
+- At least one item of each type must have been donated in the museum: fish, sea creatures, insects, fossils and any piece of art.
 
 After completing these pre-requirements, complete the following steps while playing as the **island representative** (the person who created and named the island):
 - Talk to Blathers, he'll say he plans to open a café and needs you to find Brewster, the coffee specialist.
@@ -227,22 +416,20 @@ After completing these pre-requirements, complete the following steps while play
 
 Getting coffee from Brewster often will sometimes result in him giving you gifts, or changing his greeting with you. 
 
-| **Days the Player has Purchased Coffee** | **Resulting Gift**                                                                                                     |
-|:----------------------------------------:|------------------------------------------------------------------------------------------------------------------------|
-|                    5                     | <span><img src="https://acnhcdn.com/latest/CookingIcon/FtrCafeSable.png" id="inv-icon"></span> Roost Sablé Cookie DIY  |
-|                    10                    | <span><img src="https://acnhcdn.com/latest/FtrIcon/FtrCafeBeans_Remake_0_0.png" id="inv-icon"></span> Coffee Beans |
-|                    15                    | <span><img src="https://acnhcdn.com/latest/FtrIcon/FtrCafeCupsaucer.png" id="inv-icon"></span> Cup with Saucer     |
-|                    20                    | <span><img src="https://acnhcdn.com/latest/FtrIcon/FtrCafeTree.png" id="inv-icon"></span> Coffee Plant             |
-|                    30                    | <span><img src="https://acnhcdn.com/latest/FtrIcon/FtrCafeSiphon.png" id="inv-icon"></span> Siphon                 |
-|                    40                    | <span><img src="https://acnhcdn.com/latest/FtrIcon/FtrCafeCoffeemill.png" id="inv-icon"></span> Pro Coffee Grinder |
-|                    50                    | <span><img src="https://acnhcdn.com/latest/FtrIcon/FtrHaniwaSnare04.png" id="inv-icon"></span> Brewstoid           |
+| Days the Player has Purchased Coffee | Resulting Gift                                                                     |
+| :----------------------------------- | :--------------------------------------------------------------------------------- |
+| 5                                    | <ExternalIcon icon="FtrCafeSable" category="CookingIcon" /> Roost Sablé Cookie DIY |
+| 10                                   | <ExternalIcon icon="FtrCafeBeans_Remake_0_0" category="FtrIcon" /> Coffee Beans    |
+| 15                                   | <ExternalIcon icon="FtrCafeCupsaucer" category="FtrIcon" /> Cup with Saucer        |
+| 20                                   | <ExternalIcon icon="FtrCafeTree" category="FtrIcon" /> Coffee Plant                |
+| 30                                   | <ExternalIcon icon="FtrCafeSiphon" category="FtrIcon" /> Siphon                    |
+| 40                                   | <ExternalIcon icon="FtrCafeCoffeemill" category="FtrIcon" /> Pro Coffee Grinder    |
+| 50                                   | <ExternalIcon icon="FtrHaniwaSnare04" category="FtrIcon" /> Brewstoid              |
 
 Additionally, Brewster's greeting will change when the number of days you've purchased coffee reaches: 1, 3, 5, 7, 9, 11, 13, and 15.
 
-A compact infographic by `cestislife#0473` can be found here:<br/>
-<https://cestislife.github.io/brewster>
+A compact infographic by `cestislife#0473` can be found here: https://cestislife.github.io/brewster
 
-* * *
 ## Gyroids
 ### What are gyroids?
 Gyroids are musical little clay dolls, known as "Haniwa" in Japanese, that will sing along to any song if you place a speaker playing a K.K. song nearby. If not, they will play their own tune randomly. 
@@ -250,11 +437,12 @@ Gyroids are musical little clay dolls, known as "Haniwa" in Japanese, that will 
 ### How do I get gyroids?
 Gyroids can be gotten by burying and watering a gyroid fragment, typically found on [Kapp'n Islands](/acnhfaq/island-life/#what-are-kappn-islands-and-what-can-i-find-on-them). They will be fully grown the next day. A little puff of smoke on the digspot will appear to indicate that it has been watered. 
 
+<Aside variant="note">
 As of `2.0.4` gyroid fragments may also wash up on the beach.
-{: .note}
+</Aside>
 
 ### Can I get full gyroids from digspots?
 You can only get full gyroids the day after rain on your island, after you have gotten your first gyroid from the above method. Otherwise, you may also find full gyroids from Kapp'n Islands that are raining (Rare Haniwa islands). The only gyroid unobtainable from both the methods is the Brewstoid. 
 
 A compact infographic on gyroids can be found here, created by `Bigfoot MG#9157`:<br/>
-<https://bigfootmg.github.io/ACNH-Guides/#gyroid> */}
+https://bigfootmg.github.io/ACNH-Guides/#gyroid

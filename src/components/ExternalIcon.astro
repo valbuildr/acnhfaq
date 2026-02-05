@@ -5,9 +5,17 @@ type Props = {
     icon: string;
     category: string;
     host?: string;
+    format?: string;
 } & HTMLAttributes<"img">;
 
-const { icon, category, host, class: customClass, ...restProps } = Astro.props;
+const {
+    icon,
+    category,
+    host,
+    format,
+    class: customClass,
+    ...restProps
+} = Astro.props;
 ---
 
 <>
@@ -20,6 +28,7 @@ const { icon, category, host, class: customClass, ...restProps } = Astro.props;
             category +
             "/" +
             icon +
-            ".png"}
+            "." +
+            (format ?? "png")}
     />
 </>

@@ -14,10 +14,12 @@ For all users submitting changes to the document, please refer to this style gui
 
 ### Nintendo Switch Parts
 - Joystick, when referring to the analog/joy sticks.
-- Use custom font display for such buttons, i.e. to display the <span class="icon-A"></span> or `A` button: 
+- Use custom font display for such buttons, i.e. to display the `A` button: 
 
-```html
-<span class="icon-A"></span>
+```mdx
+import { ButtonIcon } from "@/components/ButtonIcon.astro";
+
+<ButtonIcon button="A" />
 ```
 
 ### Links

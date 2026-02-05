@@ -1,16 +1,22 @@
 ---
 import type { HTMLAttributes } from "astro/types";
 
-type Props = { icon: string; category: string } & HTMLAttributes<"img">;
+type Props = {
+    icon: string;
+    category: string;
+    host?: string;
+} & HTMLAttributes<"img">;
 
-const { icon, category, class: customClass, ...restProps } = Astro.props;
+const { icon, category, host, class: customClass, ...restProps } = Astro.props;
 ---
 
 <>
     <img
         class:list={["h-8", "inline-block", "align-middle", "m-0", customClass]}
         {...restProps}
-        src={"https://alexislours.github.io/img/" +
+        src={"https://" +
+            (host ?? "acnhcdn.com/latest") +
+            "/" +
             category +
             "/" +
             icon +

@@ -1,0 +1,34 @@
+---
+/**
+ * Displays a local icon.
+ * URL = "/{folder}/{category}/{icon}.{format}"
+ * * @param {string} icon - The icon to show.
+ * * @param {string} [folder] - The folder where the icon is stored. Defaults to `/assets/img/icons`.
+ * * @param {string} [format] - The format of the icon. Defaults to `png`.
+ * * @param {string} [class] - Classes to add to the img.
+ * * @param ...restProps - Any other props to give to the img.
+ */
+
+import type { HTMLAttributes } from "astro/types";
+
+type Props = {
+    icon: string;
+    folder?: string;
+    format?: string;
+    class?: string;
+} & HTMLAttributes<"img">;
+
+const { icon, folder, format, class: customClass, ...restProps } = Astro.props;
+---
+
+<>
+    <img
+        class:list={["h-8", "inline-block", "align-middle", "m-0", customClass]}
+        {...restProps}
+        src={(folder ?? "/assets/img/icons/") +
+            "/" +
+            icon +
+            "." +
+            (format ?? "png")}
+    />
+</>

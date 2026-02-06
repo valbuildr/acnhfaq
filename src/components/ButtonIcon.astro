@@ -37,14 +37,14 @@ type Button =
     | "ZL"
     | "ZR";
 
-type Props = { button: Button } & HTMLAttributes<"span">;
+type Props = { button: Button; class?: string } & HTMLAttributes<"span">;
 
 const { button, class: customClass, ...restProps } = Astro.props;
 ---
 
 <>
     <span
-        class:list={["m-0", "button-glyph", "button-" + button]}
+        class:list={["m-0", "button-glyph", "button-" + button, customClass]}
         {...restProps}></span>
 </>
 

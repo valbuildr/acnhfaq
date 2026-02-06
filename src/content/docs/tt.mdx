@@ -2,4 +2,121 @@
 title: "Time Travel"
 description: "Frequently asked questions about Time Travel in Animal Crossing: New Horizons."
 ---
-{/* TODO: tt */}
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+## What is time travel?
+Animal Crossing games are based on real time -- for example, things that the game says will take one day truly take one real-life day to complete. "Time traveling" refers to the act of manually changing the time of the game to either be in the future or go back to the past. 
+
+Time traveling is ***not*** considered hacking. Time traveling also does not reverse/rewind progress. You keep all the progress, items, etc. that you've completed/acquired even if you time travel backwards.
+
+## How do I time travel?
+To time travel, you must either close your game or go to the 'Save Complete' screen after doing a 'Save and End'.
+You now need to change your date in your Switch settings:	
+1. Open `System Settings` > `System` > `Date and Time`.
+2. Disable `Synchronize Clock via internet` if it is ON.
+3. Go to `Date and Time` and adjust to whatever time you would like.
+4. Return to the game and the new date & time will take effect!
+
+## What are the *general* effects of time traveling (*backward* or *forward*)?
+
+<Tabs syncKey="tteffects">
+  <TabItem label="Negative Effects">
+    - Open plots may fill.
+    - Campers will leave.
+    - Turnips **will spoil** if you time travel backwards or past 5 AM the following Sunday.
+  </TabItem>
+  <TabItem label="Positive Effects">
+    - All stock (Able Sisters[^1], Nook's Cranny[^2], Nook Shopping) will refresh.
+    - Redd's art will be delivered if you purchased one.
+    - Fossils will respawn.
+    - NPC visitor shops and quests will refresh.
+    - The daily recipe bottle will respawn.
+  </TabItem>
+</Tabs>
+
+[^1]: Able Sisters' mannequin will only change if you go outside of the week.
+[^2]: Some items from Nook's Cranny can only be purchased once a week. i.e. if you bought it once, it wouldn't be restocked when time traveling to that day again in the same week.
+
+## What are the *specific* effects of time traveling forwards?
+It is important to remember that time traveling forwards is no different than closing your game and then logging in at the new, manually input time. With that said, here are the effects of going forwards.
+
+<Tabs syncKey="tteffects">
+  <TabItem label="Negative Effects">
+    - Weeds and flowers will grow/spread.
+    - Cockroaches may appear in your house (1 month or more).
+    - You may get the bedhead animation (1 month or more).
+    - Villagers may ask/comment on where you have been.[^3]
+  </TabItem>
+  <TabItem label="Positive Effects">
+    - Building construction/upgrades/moves will be completed.
+    - Weeds and flowers will grow/spread.
+    - Rocks and trees will refresh.
+    - Mail is delivered.
+    - Turnip price trend will not change.
+  </TabItem>
+</Tabs>
+
+[^3]: This does not affect your frienship with villagers.
+
+## What are the *specific* effects of time traveling backwards?
+If you time travel backward more than a day, it will be like going back to "fake" yesterday.
+
+<Tabs syncKey="tteffects">
+  <TabItem label="Negative Effects">
+    - Turnips will spoil.
+    - Turnip prices will change and your trend will be reset.
+    - Watered effect will be removed from flowers and they will not grow/breed.
+    - ABD chain will reset.
+    - Villagers will advance moving in/out.
+  </TabItem>
+  <TabItem label="Positive Effects">
+    - It will not count as a "new day" in terms of progression.
+    - Building construction/upgrades/moves will not be completed.
+    - Shop stock will be the same as it was the first time you visited that day unless you leave the current week.
+    - Rocks and trees will not refresh.
+    - Mail will not be delivered.
+  </TabItem>
+</Tabs>
+
+## What happens to my other games when I time travel for AC:NH?
+Time traveling for AC:NH will not affect other time-based games unless you launch them whilst the system time is changed.
+
+## Do I have to wait to time travel after someone invites my villager to live on their island?
+No, and likewise, you don't have to wait to time travel after inviting someone else's villager to live on your island either.
+
+## Can I time travel to play events that have passed?
+Yes, as of the `2.0.0` update, all events for all years of the game's lifespan have been unlocked, including all seasonal Nook Stop items.
+
+Player birthdays can only be experienced **once every in-game year**, and TTing back to the same birthday date won't restore it. You must go to a future or past year.
+
+## I time traveled to Festive season, but why are none of the cedar trees decorated?
+Make sure you have time traveled *forward* into the season (rather than backwards) and you have at least 1 cedar tree. For more information on how cedar trees are decorated, refer to the [infographic here](https://bigfootmg.github.io/ACNH-Plant-Guide/ex8.png).
+
+## How do I time travel to farm an NPC visitor?
+If the NPC is on a weekday ***except*** Monday:
+ - Toggle the date between the day the NPC is there and a day they are not. If you are farming an NPC that sends you gifts via mail, be sure to go forward to receive their rewards.
+
+If the NPC is on a Monday:
+ - Time travel forward a day to Tuesday, then go back to Monday (after 5 AM)
+
+## Will my villagers move out if I time travel too much? 
+Nope! Though this was something that could happen in past installments of the game, villagers in New Horizons will not move out unless you give them explicit permission to do so.
+
+## Will my villagers dislike me/lose friendship points if I time travel too much?
+Nope! They may have some dialogue about your disappearance if you do a big jump forward, but time traveling has no effect on friendship.
+
+## Do the developers know I time travel? Will they do anything to me about it?
+There is actually a variable turned up by data mining called `isTimeSly` that determines whether or not the player has time traveled! With that said, there's no indication whatsoever that the developers care, as there are no permanent in-game consequences or punishments for time traveling. Ultimately, it is your game, and you should play it however you want to!  
+
+## What are BCAT or NTP unlocks?
+BCAT and NTP unlocks are flags that gets flipped when the actual date of the intended release of an event or period has arrived in real time. Collectively, both of these are referred to as "time-locks". There is no way to manually unlock these flags other than hacking the Switch. The difference between these two unlocks are:
+<dl>
+  <dt>BCAT</dt>
+  <dd>These will append an alphabet to the game's version at the title screen, e.g.
+    <code>1.6.0 c</code>. These are usually used for event unlocks.</dd>
+  <dt>NTP</dt>
+  <dd>These do not change any observable value on the title screen or anywhere in game. These are usually used for unlocking Nook Seasonal Shopping items.</dd>
+</dl>
+
+\*Note: These will likely not be used going forward as of the `2.0.0` update.

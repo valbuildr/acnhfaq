@@ -2,4 +2,216 @@
 title: "Gifting"
 description: "Frequently asked questions about Gifting in Animal Crossing: New Horizons."
 ---
-{/* TODO: gifting */}
+
+import { Aside, Tabs, TabItem } from "@astrojs/starlight/components";
+import ButtonIcon from "@/components/ButtonIcon.astro";
+import ExternalIcon from "@/components/ExternalIcon.astro";
+
+Gifting is the act of giving your villagers presents. This can be done **once** daily, and is the primary way of raising friendship once the interaction for gifting has been unlocked. There are several nuances to gifting, and this section will aim to address those.
+
+## Is there any gameplay related benefit to gifting villagers?
+Yes, it increases your [friendship level](/villagers/friendship#what-is-friendshipwhat-are-friendship-levels) with them. For more info on gifting, please refer to Yue's gifting guide here - https://yuexr.github.io/acnh/gift.html.
+
+<Aside type="caution">
+  The "safe gifts" section of Yue's gifting guide is currently **out of date**. Please refer to the tabs below for an up-to-date list of safe gifts. Please also note that the "fruit stack trick" no longer works as the gifted item must sell for 750 <ButtonIcon button="Bells" /> or more.
+</Aside>
+
+<Tabs>
+  <TabItem label="Not Safe">
+    These items can be displayed when gifted by hand, via the mail, or on the villager's birthday.
+
+    - Furniture[^1]
+    - Food & drinks
+    - Certain clothing 
+      - Tops
+      - Dress-up
+      - Wearable headwear
+      - Accessories
+      - Unwearable headwear
+      - Bottoms
+      - Socks
+      - Shoes[^2]
+      - Bags
+    - Certain tools
+      - Nets
+      - Fishing rods
+      - Watering cans
+      - Umbrellas
+      - Sparklers
+    - Insects
+    - Fishes
+    - Sea critters
+    - Art
+    - Music
+    - Plucked flowers
+  </TabItem>
+  <TabItem label="Fairly Safe">
+    These items will only be displayed if gifted via mail or on the villager's birthday. Gifting by hand is safe.
+
+    - Certain tools
+      - Shovels
+      - Party poppers
+      - Ocarinas
+      - Tambourines
+      - Pan flutes
+      - Uchiwa fans
+      - Balloons
+      - Bubble blowers
+      - Pinwheels
+      - Tweeters
+    - Rugs[^3]
+  </TabItem>
+  <TabItem label="Completely Safe">
+    These items are never stored or displayed, regardless of gifting method.
+
+    - Fish & insect models
+    - Certain clothing items 
+      - Wet suits
+    - Certain tools 
+      - Axes
+      - Slingshots
+      - Wands
+    - Identified fossils
+    - Wallpaper
+    - Flooring
+    - All materials that don't have the `Place Item` feature
+      - Clumps of weeds
+      - Tree branches
+      - Wood, hardwood & softwood
+      - Clay & stones
+      - Iron & gold nuggets
+      - Pearls
+      - Bamboo pieces & shoots, young spring bamboo
+      - All sea shells, including summer shells
+      - All Bunny Day eggs
+      - Heart crystals
+      - Acorns & pine cones
+      - Candies
+      - All crops
+      - Mushrooms
+      - Unidentified fossils
+      - Wasp nests
+      - Pitfall seeds
+      - Fish bait
+      - Medicine
+      - Customization kits
+      - Customizable phone case kits
+      - Timers
+      - Birthday cupcakes
+      - All fruits
+      - Turnips
+      - Flower seed bags
+      - Saplings
+      - Bush & pumpkin starts
+      - Trees
+  </TabItem>
+  <TabItem label="Safe but Rejected">
+    These items are never stored or displayed, but the villager will give them back.
+
+    - Boots
+    - Empty cans
+    - Old tires
+    - Spoiled turnips
+    - Used fountain fireworks
+    - Bells
+  </TabItem>
+  <TabItem label="Cannot Gift">
+    These items cannot be gifted.
+
+    - Wrapping papers
+    - Vaulting poles{/*[^4]*/}
+    - Ladders{/*[^4]*/}
+    - Villager photos{/*[^4]*/}
+    - Posters{/*[^4]*/}
+    - Flower plants
+    - Bushes
+    - Star & zodiac fragments
+    - Cherry-blossom petals
+    - Maple leaves
+    - Snowflakes
+    - Ornaments
+    - Fences
+    - Nook Miles tickets
+    - Saharah tickets
+    - Tailors tickets
+    - Bell vouchers
+    - Dream Bell exchange tickets
+    - DIYs
+    - Message bottles
+    - What was this again? (expired lost item)
+    - Wisp spirit pieces
+    - Rusted parts
+    - Communicator parts
+    - Communicator
+    - Manila clams
+  </TabItem>
+</Tabs>
+
+*Credit to `Soleil#6271` on Discord for writing and maintaining this list!*
+
+[^1]: Wall-mounted furniture is not safe even though it's not visibly displayed, because enough of it will overload a villager's inventory to the point where they will start removing wall-mounted furniture and surface furniture.
+[^2]: Birthday-gifted/mailed rugs don't get physically placed but are stored in their inventory.
+[^3]: Although you can't hand-gift vaulting pole, ladder, villager photos, or posters, mailing these will actually cause them to get added to their inventory.
+
+## How do I get a villager's framed photo?
+Villager framed photos are sought-after items due to being difficult to obtain. In order to receive a villager's framed photo, you must first be **best friends** with them. That means you have a level 5-6 friendship with the villager, which can be achieved multiple ways. We recommend reading [this page of the FAQ](/villagers/friendship/) as well as [Yue's Friendship Guide](https://yuexr.github.io/acnh/friendship.html) to get a good idea on how to do this most efficiently.
+
+After you've achieved a high enough friendship level, there is a chance of the villager giving you their framed photo in return for a gift. The gift **must** have a sell-back value (that is, the price the item sells to Nook's Cranny for) of **750 bells**. The chance of receiving their framed photo at this point is `6 - 10%`, so you may need to gift multiple times before obtaining their framed photo.
+
+<Aside type="note">
+  As of `2.0.4`, villagers may only give you a duplicate of their photo after you have spoken to them for 10 days starting from the day you received their first photo.
+</Aside>
+
+Please see [Yue's Gifting Guide](https://yuexr.github.io/acnh/gift.html) for more detailed info.
+
+### Does the fruit stack trick still work?
+If you are familiar with grinding for villager framed photos, you may know of a popular trick called the "fruit stack" trick, wherein you can obtain a villager's photo by gifting them a fruit from a stack of fruits with a full inventory. Because the villager cannot give you back an item, they must mail it to you, which has the chance of being their framed photo. Additionally, there is a *higher* chance of receiving their photo by doing this method, so it was very popular with those trying to get photos quickly.
+
+Unfortunately, the fruit stack trick **no longer works** as of version `1.9.0`, as the game now always checks if the sell price of the item is 750 <span class="icon-Bells"></span> or more. You can still do the stack trick as mailed gifts still have a higher chance of yielding their framed photo, but you must now choose an item that is stackable **and** has an individual sell price of 750 <ButtonIcon button="Bells" /> or more. Here is a list of items that meet this criteria and are safe to gift (meaning they do not get placed in the villager's home, so they can maintain an "ungifted" state):
+- <ExternalIcon icon="Shell2" category="MenuIcon" /> Giant clams
+- <ExternalIcon icon="Mush0" category="MenuIcon" /> Elegant mushrooms
+- <ExternalIcon icon="Mush4" category="MenuIcon" /> Rare mushrooms
+- <ExternalIcon icon="Gold_Ore" category="MenuIcon" /> Gold nuggets
+- <ExternalIcon icon="Pearl" category="MenuIcon" /> Pearls
+
+And some additional, "unsafe" (can be displayed in villager homes) options:
+- <ExternalIcon icon="Rose7" category="MenuIcon" /> Blue roses (plucked)
+- <ExternalIcon icon="GoldenRose" category="MenuIcon" /> Gold roses (plucked)
+
+## If I complete X quest for my villager, will they keep that item in their inventory?
+It depends on the type of quest and friendship levels! These are the storing rules for quests:
+- Buy/Trade an item from your pockets: Always stored
+- Appreciation or Apology Gift: Always stored
+- Wrongly Delivered Item Return 
+  - Friendship level 1-2: Always stored
+  - Friendship level 3-4: Stored 70% of the time
+  - Friendship level 5-6: Never stored
+- Left Item Return
+  - Friendship level 1-2: Always stored
+  - Friendship level 3-4: Stored 70% of the time
+  - Friendship level 5-6: Never stored
+- Borrowed Item Return: Never stored
+- Catch Request: Never stored
+
+<Aside type="note">
+  If you are asked to deliver a present, but you open said present before delivering it, the item will never be stored by the recipient.
+</Aside>
+
+## My villager wears clothing I gifted them, how do I reset it?
+Report the villager to [Isabelle](/npc/permanent/#isabelle) using the option `The way they dress.` This will remove from their wardrobe whatever clothing items and/or custom designs the villager is currently wearing.
+
+{/* Old mechanics */}
+{/* Villagers' gifted clothing can be removed via giving them over 24 wearable clothing items, as 24 is the limit for clothing a villager can hold.
+- Accessories can be replaced by gifting them 24 *non-glasses* accessories (e.g. bubblegum).
+- Hats (no helmets): in the game exist two tags for hats, free and womanly. Male villagers will only use hats tagged as free and gifting them 24 womanly hats will replace other hats from their storage. Since female villagers can use both types of hats, the only way to remove them is when they approach you to sell/gift/trade the item. For information on clothing tags, visit <https://bit.ly/3gWAJDe>.
+- If you wish to remove a custom design, please read [here](/acnhfaq/npc/permanent/#isabelle).
+- Note: Villagers may place any gifted item (including tops) in their homes as mannequins in their house. */}
+
+## My villager placed a furniture item (or a mannequin of a clothing) I gifted them in their house, how do I remove it?
+If you **do not** own the Happy Home Paradise DLC, you cannot remove the furniture/mannequin, but you can replace it using [this guide](https://docs.google.com/spreadsheets/d/1Iql5J5BXG-SuJvtw_duLZzjIw5myGcFnEL-I3BSR_CE/edit?usp=sharing). Replacing mannequins forces the clothing item (if wearable) to go into the villager's clothing inventory and thus be able to wear it.
+
+If you **do** own the Happy Home Paradise DLC, you can report the villager to [Isabelle](/npc/permanent/#isabelle) using the `The way their house looks` option. This option only becomes available once the full storyline of HHP has been completed. Please see our [HHP unlocks](/hhp/unlocks/) page for details.
+
+<Aside type="note">
+  As of `1.7.0`, clothing can now be placed on surfaces, and hence overflowing furniture storage wont remove clothing on surfaces. Caps and Accessories can't be overflowed with other clothes to be removed since they won't be removed if there are 4 or less of either of them. The only way to remove them completely is to **wait for the villager to gift you them on approach**, or try to buy it from them during a house visit.
+</Aside>

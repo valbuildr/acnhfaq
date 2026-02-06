@@ -17,7 +17,7 @@ For all users submitting changes to the document, please refer to this style gui
 - Use custom font display for such buttons, i.e. to display the `A` button: 
 
 ```mdx
-import { ButtonIcon } from "@/components/ButtonIcon.astro";
+import ButtonIcon from "@/components/ButtonIcon.astro";
 
 <ButtonIcon button="A" />
 ```

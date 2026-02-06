@@ -39,6 +39,14 @@ https://www.polygon.com/animal-crossing-new-horizons-switch-acnh-guide/2020/3/20
 <details>
 <summary>Click here to open</summary>
 
+### 2.0.0
+- Use [Astro](https://astro.build) + [Starlight](https://starlight.astro.build) instead of [Jekyll](https://jekyllrb.com/) + [Just the Docs](https://just-the-docs.com/) + MD
+- Minor changes including:
+  - Using MDX instead of plain Markdown (allows for using components)
+  - Using components for icons
+  - Minor gramtical changes
+  - Removed most references to acnhapi.com, since it's become a phishing domain
+
 ### 1.6.2
 - Updates to tables in "Unlocking Things" page.
 - Updated dates for dynamically scheduled events in "Events" page.

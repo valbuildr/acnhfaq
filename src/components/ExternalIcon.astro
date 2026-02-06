@@ -1,13 +1,33 @@
 ---
+/**
+ * Displays an external icon.
+ * URL = "https://{host}/{category}/{icon}.{format}"
+ * * @param {string} icon - The icon to show.
+ * * @param {string} category - The category of the icon.
+ * * @param {string} [host] - The host of the icon. Defaults to `acnhcdn.com/latest`.
+ * * @param {string} [format] - The format of the icon. Defaults to `png`.
+ * * @param {string} [class] - Classes to add to the img.
+ * * @param ...restProps - Any other props to give to the img.
+ */
+
 import type { HTMLAttributes } from "astro/types";
 
 type Props = {
     icon: string;
     category: string;
     host?: string;
+    format?: string;
+    class?: string;
 } & HTMLAttributes<"img">;
 
-const { icon, category, host, class: customClass, ...restProps } = Astro.props;
+const {
+    icon,
+    category,
+    host,
+    format,
+    class: customClass,
+    ...restProps
+} = Astro.props;
 ---
 
 <>
@@ -20,6 +40,7 @@ const { icon, category, host, class: customClass, ...restProps } = Astro.props;
             category +
             "/" +
             icon +
-            ".png"}
+            "." +
+            (format ?? "png")}
     />
 </>

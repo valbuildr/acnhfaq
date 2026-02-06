@@ -2,4 +2,193 @@
 title: "Visiting NPCs"
 description: "Frequently asked questions about Visiting NPCs in Animal Crossing: New Horizons."
 ---
-{/* TODO: visiting npcs */}
+
+import { Aside } from "@astrojs/starlight/components";
+import ExternalIcon from "@/components/ExternalIcon.astro";
+import FloatRightPoster from "@/components/FloatRightPoster.astro";
+
+Visiting NPCs, as the name suggests, visits your island. These NPCs have a visiting schedule dictated by who has appeared the week before, and usually only one visiting NPC will be present on your island at any given day. Some of them will wander your island, and some of them will hang out at the plaza. 
+
+## How often does a visiting NPC visit?
+
+Visiting NPCs are on a set **bi-weekly** schedule, and each rotating NPC can only visit a maximum of once per week. In short, you should see a particular visiting NPC at least once every two weeks. 
+
+Refer to Yue's guide here for a compressed version of the information on this page: https://yuexr.github.io/img/npcskd.png
+
+<Aside type="note">
+  [<ExternalIcon icon="hgh" category="NpcIcon" /> Mabel](/npc/permanent/#-mabel) is considered a visiting NPC before she sets up her shop, the Able Sisters. She can visit on any day, but prioritises weekends. 
+</Aside>
+
+## <ExternalIcon icon="boc" category="NpcIcon" class="h-10" /> Daisy Mae
+
+<FloatRightPoster poster="PosterNpcSpBoc" />
+
+- Required Nook's Cranny to have been built.
+- Visits between 5am and 12pm on Sundays.
+  - Though the player can't buy turnips after 12pm, Daisy Mae can be found in The Roost ([if the Museum has been upgraded](/unlocks/#building-unlocks)) after 12pm on Sundays.
+- Visits every Sunday to sell turnips (see [Turnips/Stalk Market](/island-life/turnips) for more info).
+
+## <ExternalIcon icon="ows" category="NpcIcon" class="h-10" /> Celeste
+
+<FloatRightPoster poster="PosterNpcSpOws" />
+
+- Requires [the Museum to be built](/unlocks#building-unlocks).
+- Visits between 7pm and 4am on meteor shower nights.
+- [Blathers](/npc/permanent#-blathers)' sister.
+- Shares information about astronomy and gives the player **Celestial and Zodiac DIYs**.
+- Once the player has learned all of her obtainable recipes, she will give the player star fragments.
+- Celeste can only visit on nights where you have shooting stars (see [NPC Schedule](#how-often-does-a-visiting-npc-visit)).
+
+<Aside type="note">
+  Celeste's appearance will be blocked by K.K. Slider, e.g. when the only meteor shower night of the week falls on a Saturday.
+</Aside>
+
+## <ExternalIcon icon="tkkA" category="NpcIcon" class="h-10" /> K.K. Slider
+
+<FloatRightPoster poster="PosterNpcSpTkkA" />
+
+- Requires a 3 star island rating and completion of [Project K](/unlocks#misc-unlocks).
+- Visits between 5am and 12am on Saturdays[^1].
+- Holds special visits for player birthdays.
+- Talking to K.K. will allow you to request a song from him. Doing so will prompt a performance, and afterwards he will give you a copy of the song.
+- Additionally, you can request specific songs from K.K., which is how you obtain "secret songs". All K.K. songs and their corresponding moods can be found [here](/island-dev/music#how-do-i-put-music-in-the-music-players).
+- K.K. Slider only takes song requests from 6:00pm - 12:00am
+
+[^1]: K.K. Slider will appear on Sunday if there's an event (Fishing Tourney, Bug-Off, etc) on Saturday, and will be pushed to Monday if there is also an event (Fireworks Festival in August) on Sunday.
+
+## <ExternalIcon icon="cml" category="NpcIcon" class="h-10" /> Saharah
+
+<FloatRightPoster poster="PosterNpcSpCml" />
+
+- Requires the player's house to be built.
+- Visits between 5am and 12am.
+- Sells rugs (small, medium, and large) and exclusive flooring and wallpaper.
+- Buy from her to obtain **Saharah Tickets**.
+  - Small rugs award 1 ticket.
+  - Medium rugs award 2 tickets.
+  - Large rugs award 3 tickets.
+- These tickets can be used to buy extra mysterious flooring/wallpaper, which cost **5 tickets each.** 
+- Mysterious flooring/wallpaper purchased with **Saharah Tickets** are random for each player.
+
+<Aside type="note">
+  Saharah rugs can be reordered through the catalogue, but her flooring and wallpaper cannot.
+</Aside>
+
+## <ExternalIcon icon="fox" category="NpcIcon" class="h-10" /> Redd
+
+<FloatRightPoster poster="PosterNpcSpFox" />
+
+- Requires the museum to be built and have the [art wing expansion](/unlocks#building-unlocks).[^2]
+- Visits all day.
+- Sells artwork (real and fake) and non-native color variant furniture.
+- Docks his ship at the player's secret beach on the north shore of the island.
+  - Redd will be roaming the player's island if it's his first visit.
+- Each player can purchase up to one piece of artwork from him, and an unlimited amount of the 2 furniture items he brings each visit.
+- Art is mailed to you the following day, furniture is in your pocket immediately after purchase.
+- For more info on Redd's art see [here](https://yuexr.github.io/img/redd1.png) and [here](https://yuexr.github.io/img/redd2.png).
+- The [Fake Art Identifier tool here](https://nookplaza.net/tools?tab=fake_art) can be used to find the differences between fake and real art.
+
+[^2]: As of version `2.0.0`, the art wing is automatically unlocked once you upgrade from Blathers' tent to the Museum. Players without the art wing will need 60 total donations to upgrade the Museum.
+
+## <ExternalIcon icon="bey" category="NpcIcon" class="h-10" /> C.J.
+
+<FloatRightPoster poster="PosterNpcSpBey" />
+
+- Requires [Resident Services to be upgraded](/unlocks#building-unlocks).
+- Visits all day.
+- Buys fish for **1.5x** Timmy and Tommy's price after the completion of a challenge.
+- Can make you fish models, which require 3 of the same fish, and is mailed to you the following day.
+- C.J. is the host of the [Fishing Tournament](/events#fishing-toruney).
+
+<Aside type="note">
+  Visting players are unable to commission from C.J. and are also unable to sell to him as a visiting NPC. They can only sell to him during the Fishing Tourney.
+</Aside>
+
+## <ExternalIcon icon="chy" category="NpcIcon" class="h-10" /> Flick
+
+<FloatRightPoster poster="PosterNpcSpChy" />
+
+- Requires [Resident Services to be upgraded](/unlocks#building-unlocks).
+- Visits all day.
+- Buys bugs for **1.5x** Timmy and Tommy's price.
+- Can make you bug models, which require 3 of the same bug, and is mailed to you the following day.
+- Flick is the host of the [Bug-Off](/events#bug-off).
+
+<Aside type="note">
+  Visting players are unable to commission from Flick and are also unable to sell to him as a visiting NPC. They can only sell to him during the Bug-Off.
+</Aside>
+
+## <ExternalIcon icon="hgc" category="NpcIcon" class="h-10" /> Label
+
+<FloatRightPoster poster="PosterNpcSpHgc" />
+
+- Requires [Able Sisters to be built](/unlocks#building-unlocks).
+- Visits from 5am to 10pm.
+- Conducts fashion challenges with the player in exchange for clothing and/or **Tailor's Tickets** which can be used in The Able Sisters shop.
+- The middle sister of Mabel and Sable, does not work in The Able Sisters shop, instead visits your island in the Resident Services plaza.
+- Label quest rewards are calculated as below:
+
+| Evaluation   | Items that fit the theme | Reward                                                           | Friendship points increase |
+|--------------|--------------------------|------------------------------------------------------------------|----------------------------|
+| 4: Great     | 3+                       | 1 item from Labelle fashion line + 2 tailor's tickets (via mail) | 5                          |
+| 3: Good      | 2                        | 1 item from Labelle fashion line + 1 tailor's ticket (via mail)  | 4                          |
+| 2: Good      | 1                        | 1 tailor's ticket (via mail)                                     | 3                          |
+| 1: Not Great | 1                        | 1 tailor's ticket (via mail)                                     | 2                          |
+
+<Aside type="note">
+  Friendship levels with Label only impact her and Sable's dialogs (referencing Label).
+</Aside>
+
+## <ExternalIcon icon="skk" category="NpcIcon" class="h-10" /> Kicks
+
+<FloatRightPoster poster="PosterNpcSpSkk" />
+
+- Requires [Able Sisters to be built](/unlocks#building-unlocks).
+- Visits from 5am to 10pm.
+- Shop vendor in the Resident Services plaza that sells mostly exclusive accessories, bags and shoes.
+
+## <ExternalIcon icon="slo" category="NpcIcon" class="h-10" /> Leif
+
+<FloatRightPoster poster="PosterNpcSpSlo" />
+
+- No requirements.
+- Visits from 5am to 10pm.
+- Shop vendor in the Resident Services plaza that sells shrubs starts, flower seeds, and pumpkin starts.
+- Buys weeds for double the price of Nook's Cranny (20 bells per weed).
+
+<Aside type="note">
+  Leif sells pumpkin starts at a discounted price during the month of October.
+</Aside>
+
+## <ExternalIcon icon="gul" category="NpcIcon" class="h-10" /> Gulliver
+
+<FloatRightPoster poster="PosterNpcSpGul" />
+
+- Requires [the Museum to be built](/unlocks#building-unlocks).
+- Visits all day.
+- Can be found sleeping on the island's beaches, and upon waking Gulliver up, he will ask you to find 5 communicator parts which are buried in the sand.
+- If the player completes his favor, he will mail the player a special furniture item the following day.
+- A list of Gulliver's rewards [can be found here](https://catalogue.ac/?s=c3JjPWd1bGxpdmVy)
+
+## <ExternalIcon icon="gulB" category="NpcIcon" class="h-10" /> Gullivarrr
+
+- Requires a wetsuit to have been bought.
+- Visits all day.
+- Can be found sleeping on the island's beaches, and upon waking Gullivarrr up, he will ask you to find his single communicator by diving for it in the ocean.
+- If the player completes his favor, he will mail the player a special pirate furniture item the following day.
+- See [Yue's guide here](https://yuexr.github.io/img/gullivarrr.png) on how to help him.
+- See [here for a list](https://yuexr.github.io/img/pirate.png) of his rewards.
+
+## <ExternalIcon icon="gstA" category="NpcIcon" class="h-10" /> Wisp
+
+<FloatRightPoster poster="PosterNpcSpGst" />
+
+- No requirements.
+- Visits from 8pm to 5am.
+- Upon speaking to Wisp, he will become scared and "fall apart". This will prompt him to ask you to find his **5 spirit pieces.**
+- Completing Wisp's quest will cause him to gift you either a furniture, clothing, wallpaper or flooring item. He will ask if you want `Something expensive` or `Something new`.
+- Exact rates and logic of the rewards can be found on [asteriation's website](https://acnh.isomorphicbox.com/rates/#wisp).
+
+<Aside type="note">
+  Wisp can visit on any Weekday that has no visiting NPC scheduled. If the week is full, he will only appear on Weekends. Celeste and Mabel can block his appearance on weekends, but not on Weekdays.
+</Aside>
